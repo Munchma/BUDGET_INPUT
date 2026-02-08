@@ -4,7 +4,7 @@
 // Replace with your Google Form's formResponse URL and entry IDs
 // Instructions: See README.md for how to get these values
 
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScayfYui8Wkh5kALc0mf9ceF42IP-9zkX-c9OxaECZx37MWiQ/formResponse?';
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScayfYui8Wkh5kALc0mf9ceF42IP-9zkX-c9OxaECZx37MWiQ/formResponse';
 // Example: 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse'
 
 const ENTRY_IDS = {
