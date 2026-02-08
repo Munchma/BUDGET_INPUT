@@ -4,13 +4,13 @@
 // Replace with your Google Form's formResponse URL and entry IDs
 // Instructions: See README.md for how to get these values
 
-const GOOGLE_FORM_URL = 'YOUR_FORM_URL_HERE';
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScayfYui8Wkh5kALc0mf9ceF42IP-9zkX-c9OxaECZx37MWiQ/viewform?usp=pp_url&entry.374887505=TD&entry.997602920=100&entry.733685855=2026-02-08';
 // Example: 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse'
 
 const ENTRY_IDS = {
-    paymentType: 'YOUR_PAYMENT_TYPE_ENTRY_ID',  // e.g., 'entry.123456789'
-    amount: 'YOUR_AMOUNT_ENTRY_ID',              // e.g., 'entry.987654321'
-    date: 'YOUR_DATE_ENTRY_ID'                   // e.g., 'entry.555555555'
+    paymentType: 'entry.374887505',  // e.g., 'entry.123456789'
+    amount: 'entry.997602920',              // e.g., 'entry.987654321'
+    date: 'entry.733685855'                   // e.g., 'entry.555555555'
 };
 
 // ============================================
