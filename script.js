@@ -24,13 +24,13 @@ const errorMessage = document.getElementById('errorMessage');
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
     
-    // Get input values
-    const payments = {
-        'TD VISA': parseFloat(document.getElementById('tdVisa').value) || 0,
-        'MBNA': parseFloat(document.getElementById('mbna').value) || 0,
-        'TD LOC': parseFloat(document.getElementById('tdLoc').value) || 0,
-        'Tangerine LOC': parseFloat(document.getElementById('tangerine').value) || 0
-    };
+// Get input values
+const payments = {
+    'TD': parseFloat(document.getElementById('tdVisa').value) || 0,  // Changed from 'TD VISA'
+    'MBNA': parseFloat(document.getElementById('mbna').value) || 0,
+    'TD LOC': parseFloat(document.getElementById('tdLoc').value) || 0,
+    'Tangerine': parseFloat(document.getElementById('tangerine').value) || 0  // Changed from 'Tangerine LOC'
+};
     
     // Check if at least one payment is entered
     const hasPayment = Object.values(payments).some(amount => amount > 0);
