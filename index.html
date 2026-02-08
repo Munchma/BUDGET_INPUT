@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💳 Payment Tracker</h1>
+            <p class="subtitle">Log your debt payments</p>
+        </header>
+
+        <form id="paymentForm">
+            <!-- TD VISA -->
+            <div class="payment-card">
+                <label for="tdVisa">TD VISA</label>
+                <div class="input-group">
+                    <span class="currency">$</span>
+                    <input 
+                        type="number" 
+                        id="tdVisa" 
+                        name="tdVisa" 
+                        placeholder="0.00" 
+                        step="0.01"
+                        min="0">
+                </div>
+            </div>
+
+            <!-- MBNA -->
+            <div class="payment-card">
+                <label for="mbna">MBNA</label>
+                <div class="input-group">
+                    <span class="currency">$</span>
+                    <input 
+                        type="number" 
+                        id="mbna" 
+                        name="mbna" 
+                        placeholder="0.00" 
+                        step="0.01"
+                        min="0">
+                </div>
+            </div>
+
+            <!-- TD LOC -->
+            <div class="payment-card">
+                <label for="tdLoc">TD LOC</label>
+                <div class="input-group">
+                    <span class="currency">$</span>
+                    <input 
+                        type="number" 
+                        id="tdLoc" 
+                        name="tdLoc" 
+                        placeholder="0.00" 
+                        step="0.01"
+                        min="0">
+                </div>
+            </div>
+
+            <!-- Tangerine LOC -->
+            <div class="payment-card">
+                <label for="tangerine">Tangerine LOC</label>
+                <div class="input-group">
+                    <span class="currency">$</span>
+                    <input 
+                        type="number" 
+                        id="tangerine" 
+                        name="tangerine" 
+                        placeholder="0.00" 
+                        step="0.01"
+                        min="0">
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Log Payments</button>
+        </form>
+
+        <div id="successMessage" class="success-message hidden">
+            ✓ Payments logged successfully!
+        </div>
+
+        <div id="errorMessage" class="error-message hidden">
+            ⚠ Please enter at least one payment amount
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
